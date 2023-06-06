@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Etch-A-Sketch</title>
+</head>
+<body draggable="false">
+    
+    <div class="container">
+        <div class="content">
+            <div class="controls">
+                <input id="color-picker" type="color" value="#333333" />
+                <button id="color-mode" class="toggleable" style="background-color: #333; color: #fefefe;">Color Mode</button>
+                <button id="rainbow-mode" class="toggleable">Rainbow Mode</button>
+                <button id="eraser-mode" class="toggleable">Eraser Mode</button>
+                <button id="clear">Clear</button>
+                <div shownSize id="shown-size">16 x 16</div>
+                <input id="size-picker" type="range" value="16" min="1" max="64"/>
+            </div>
+            <div class="title-and-grid">
+                <div class="title">ETCH-A-SKETCH</div>
+                <div class="grid"></div>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
